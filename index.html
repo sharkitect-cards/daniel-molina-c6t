@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <title>{{PERSON_FULL_NAME}} | Fantastic Floors</title>
-    <meta name="description" content="{{PERSON_FULL_NAME}} - {{PERSON_TITLE}}, Fantastic Floors. ">
+    <title>Daniel Molina | Fantastic Floors</title>
+    <meta name="description" content="Daniel Molina - Residential Manager, Fantastic Floors. ">
 
     <!-- PWA / Home Screen support -->
     <meta name="apple-mobile-web-app-capable" content="yes">
@@ -299,8 +299,8 @@
             <img src="logo.svg" alt="Fantastic Floors">
         </div>
 
-        <div class="name">{{PERSON_FULL_NAME}}</div>
-        <div class="title">{{PERSON_TITLE}}</div>
+        <div class="name">Daniel Molina</div>
+        <div class="title">Residential Manager</div>
         <div class="company">Fantastic Floors</div>
 
         <div class="divider"></div>
@@ -310,9 +310,9 @@
         <div class="bio">Olathe's Preferred Family-Owned Flooring and Remodeling Partner Since 2017</div>
 
         <div class="contact-links">
-            <a href="tel:{{PERSON_PHONE_E164}}" class="contact-link">
+            <a href="tel:+19133135422" class="contact-link">
                 <svg viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
-                <span>{{PERSON_PHONE_DISPLAY}}</span>
+                <span>(913) 313-5422</span>
             </a>
             <!-- OFFICE_PHONE_START -->
             <a href="tel:+19135387173" class="contact-link">
@@ -321,9 +321,9 @@
             </a>
             <!-- OFFICE_PHONE_END -->
 
-            <a href="mailto:{{PERSON_EMAIL}}" class="contact-link">
+            <a href="mailto:daniel@fantasticfloorskc.com" class="contact-link">
                 <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
-                <span>{{PERSON_EMAIL}}</span>
+                <span>daniel@fantasticfloorskc.com</span>
             </a>
 
             <a href="https://www.fantasticfloorsks.com" target="_blank" rel="noopener" class="contact-link">
@@ -336,12 +336,7 @@
                 <span>1370 N Winchester St, Olathe, KS, 66061</span>
             </a>
             <!-- OFFICE_ADDRESS_END -->
-            <!-- BOOKING_LINK_START -->
-            <a href="{{PERSON_BOOKING_URL}}" target="_blank" rel="noopener" class="contact-link">
-                <svg viewBox="0 0 24 24"><path d="M19 3h-1V1h-2v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V8h14v11zM7 10h5v5H7z"/></svg>
-                <span>Book a meeting</span>
-            </a>
-            <!-- BOOKING_LINK_END -->
+            
         </div>
 
         <div class="btn-row">
@@ -385,13 +380,13 @@
             const vcard = [
                 `BEGIN:VCARD`,
                 `VERSION:3.0`,
-                `N:{{PERSON_LAST_NAME}};{{PERSON_FIRST_NAME}};;;`,
-                `FN:{{PERSON_FULL_NAME}}`,
+                `N:Molina;Daniel;;;`,
+                `FN:Daniel Molina`,
                 `ORG:Fantastic Floors`,
-                `TITLE:{{PERSON_TITLE}}`,
-                `TEL;TYPE=CELL:{{PERSON_PHONE_DISPLAY}}`,
+                `TITLE:Residential Manager`,
+                `TEL;TYPE=CELL:(913) 313-5422`,
                 _officePhone ? `TEL;TYPE=WORK:${_officePhone}` : '',
-                `EMAIL;TYPE=WORK:{{PERSON_EMAIL}}`,
+                `EMAIL;TYPE=WORK:daniel@fantasticfloorskc.com`,
                 'URL:https://www.fantasticfloorsks.com',
                 _adrLine,
                 _noteStr ? `NOTE:${_noteStr}` : '',
@@ -403,7 +398,7 @@
             const url = URL.createObjectURL(blob);
             const a = document.createElement('a');
             a.href = url;
-            a.download = '{{PERSON_FULL_NAME_DASH}}.vcf';
+            a.download = 'Daniel-Molina.vcf';
             document.body.appendChild(a);
             a.click();
             document.body.removeChild(a);
