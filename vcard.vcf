@@ -1,0 +1,13 @@
+BEGIN:VCARD
+VERSION:3.0
+N:Molina;Daniel;;;
+FN:Daniel Molina
+ORG:Fantastic Floors LLC
+TITLE:Residential Manager
+TEL;TYPE=CELL:(913) 313-5422
+TEL;TYPE=WORK:(913) 538-7173
+EMAIL;TYPE=WORK:daniel@fantasticfloorskc.com
+URL:https://www.fantasticfloorsks.com
+ADR;TYPE=WORK:;;1370 N Winchester St;Olathe;KS;66061;USA
+NOTE:We're All You Need | Olathe's Preferred Family-Owned Flooring and Remodeling Partner Since 2017
+END:VCARD
